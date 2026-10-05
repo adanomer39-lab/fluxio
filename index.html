@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="so">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fluxio — Social Platform</title>
+<meta name="description" content="Fluxio — social platform for sharing posts, messages, reels and connecting with people.">
+<meta name="keywords" content="Fluxio, social media, social network, posts, reels, messages">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#080b12">
+<meta property="og:title" content="Fluxio — Social Platform">
+<meta property="og:description" content="Connect, share and discover on Fluxio.">
+<meta property="og:type" content="website">
+<link rel="manifest" href="manifest.webmanifest">
+
+<style>
+:root{--bg:#080b12;--panel:#101521;--panel2:#151c2a;--text:#f5f7fb;--muted:#9aa6b8;--line:#222b3a;--a:#19d3ff;--b:#8b5cf6;--danger:#ff5577}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% -10%,#20285a 0,#080b12 35%);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer;border:0}.app{display:flex;min-height:100vh}.side{width:250px;background:#0b0f18;border-right:1px solid var(--line);padding:18px;position:fixed;inset:0 auto 0 0;z-index:5}.brand{font-size:25px;font-weight:900;margin:8px 10px 25px;background:linear-gradient(90deg,var(--a),var(--b));color:transparent;background-clip:text}.nav button{width:100%;padding:12px 14px;margin:3px 0;border-radius:12px;background:transparent;color:#cbd5e1;text-align:left}.nav button:hover,.nav button.active{background:#182131;color:white}.admin{margin-top:18px;border-top:1px solid var(--line);padding-top:15px}.main{margin-left:250px;width:calc(100% - 250px)}.top{height:66px;border-bottom:1px solid var(--line);background:#0b0f18dd;backdrop-filter:blur(10px);display:flex;align-items:center;gap:12px;padding:10px 24px;position:sticky;top:0;z-index:4}.search{flex:1;max-width:600px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:11px 14px;color:white;outline:0}.avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--a),var(--b));display:grid;place-items:center;font-weight:900}.wrap{max-width:1200px;margin:auto;padding:25px}.view{display:none}.view.show{display:block}.hero{background:linear-gradient(135deg,#111a2b,#151128);border:1px solid var(--line);border-radius:24px;padding:28px}.hero h1{font-size:38px;margin:0 0 8px}.muted{color:var(--muted)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.primary{background:linear-gradient(90deg,var(--a),var(--b));color:#061018;padding:11px 16px;border-radius:12px;font-weight:800}.ghost{background:var(--panel2);color:white;padding:11px 16px;border:1px solid var(--line);border-radius:12px}.danger{background:#3a1520;color:#ff91a7;padding:9px 12px;border-radius:10px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px}.stat{font-size:27px;font-weight:900;margin-top:6px}.stories{display:flex;gap:12px;overflow:auto;padding:14px 0}.story{min-width:78px;text-align:center}.ring{width:62px;height:62px;border-radius:50%;padding:3px;background:linear-gradient(135deg,var(--a),var(--b),#ff4d9d);margin:auto}.ring div{width:100%;height:100%;border-radius:50%;background:#111827;display:grid;place-items:center}.composer{display:flex;gap:12px;align-items:center;margin:15px 0}.composer input{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:13px;color:white}.post{background:var(--panel);border:1px solid var(--line);border-radius:18px;margin:15px 0;padding:18px}.posthead{display:flex;align-items:center;gap:10px}.post img{width:100%;border-radius:15px;margin-top:14px;max-height:420px;object-fit:cover}.postbar{display:flex;gap:8px;margin-top:10px}.postbar button{background:transparent;color:#b8c2d2;padding:8px;border-radius:9px}.postbar button:hover{background:#1a2230}.cols{display:grid;grid-template-columns:2fr 1fr;gap:18px}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:13px 9px;border-bottom:1px solid var(--line);text-align:left}.pill{display:inline-block;padding:5px 9px;border-radius:20px;background:#172235;color:#9feaff;font-size:12px}.modal{position:fixed;inset:0;background:#0009;display:none;align-items:center;justify-content:center;z-index:20;padding:20px}.modal.show{display:flex}.modalbox{width:min(620px,100%);background:#111827;border:1px solid var(--line);border-radius:20px;padding:20px}.modal input,.modal textarea{width:100%;margin:8px 0;background:#0b1019;border:1px solid var(--line);color:white;padding:12px;border-radius:12px}.chat{height:420px;display:flex;flex-direction:column}.messages{flex:1;overflow:auto}.bubble{max-width:75%;padding:10px 13px;border-radius:14px;margin:8px 0;background:#192333}.me{margin-left:auto;background:#12394a}.chatinput{display:flex;gap:8px}.chatinput input{flex:1;background:#0b1019;color:white;border:1px solid var(--line);padding:11px;border-radius:12px}.toggle{width:48px;height:26px;border-radius:20px;background:#344054;padding:3px}.toggle i{display:block;width:20px;height:20px;border-radius:50%;background:white;transition:.2s}.toggle.on{background:#16b9df}.toggle.on i{transform:translateX(22px)}.bottom{display:none}.toast{position:fixed;right:18px;bottom:18px;background:#111827;border:1px solid var(--line);padding:12px 15px;border-radius:12px;display:none;z-index:30}.toast.show{display:block}
+@media(max-width:850px){.side{display:none}.main{margin:0;width:100%}.top{padding:10px 14px}.wrap{padding:15px}.grid{grid-template-columns:repeat(2,1fr)}.cols{grid-template-columns:1fr}.hero h1{font-size:30px}.bottom{position:fixed;display:flex;bottom:0;left:0;right:0;background:#0b0f18ee;border-top:1px solid var(--line);z-index:10;justify-content:space-around;padding:8px}.bottom button{background:transparent;color:#aeb9c9;font-size:20px}.bottom button.active{color:var(--a)}body{padding-bottom:58px}}
+
+.loginScreen{position:fixed;inset:0;z-index:100;background:radial-gradient(circle at 50% 0,#25265d 0,#080b12 48%);display:grid;place-items:center;padding:20px}.loginCard{width:min(430px,100%);background:#101521;border:1px solid #293346;border-radius:24px;padding:30px;box-shadow:0 25px 80px #0008}.loginLogo{text-align:center;font-size:32px;font-weight:950;background:linear-gradient(90deg,#19d3ff,#8b5cf6);color:transparent;background-clip:text}.loginBadge{text-align:center;margin:12px auto;width:max-content;padding:5px 10px;border-radius:20px;background:#162638;color:#8feaff;font-size:11px;letter-spacing:1px}.loginCard h1{text-align:center;margin:12px 0 5px}.loginCard>p{text-align:center}.loginCard label{display:block;margin-top:15px;margin-bottom:6px;color:#cbd5e1;font-size:14px}.loginCard input{width:100%;background:#0b1019;color:white;border:1px solid #293346;padding:13px;border-radius:12px;outline:none}.loginCard input:focus{border-color:#19d3ff}.passWrap{display:flex;gap:6px}.passWrap input{flex:1}.passWrap button{background:#182131;color:white;border:1px solid #293346;border-radius:10px;width:45px}.loginRow{display:flex;align-items:center;justify-content:space-between;gap:10px}.loginRow label{margin:0}.check{display:flex!important;align-items:center;gap:7px!important}.check input{width:auto!important}.linkBtn{background:none;color:#63dfff;border:0;padding:0}.loginBtn{width:100%;margin-top:18px}.loginError{min-height:20px;text-align:center;color:#ff829a;margin-top:10px;font-size:13px}.divider{display:flex;align-items:center;gap:10px;color:#667085;margin:18px 0}.divider:before,.divider:after{content:"";height:1px;background:#293346;flex:1}.loginNote{font-size:12px!important;color:#7f8ba0!important}.hiddenApp{display:none!important}
+</style>
+</head>
+<body>
+
+<div id="loginScreen" class="loginScreen">
+  <div class="loginCard">
+    <div class="loginLogo">⚡ Fluxio</div>
+    <div class="loginBadge">SECURE LOGIN</div>
+    <h1>Ku soo dhawoow Fluxio</h1>
+    <p class="muted">Geli akoonkaaga si aad u sii wadato.</p>
+    <form id="loginForm">
+      <label>Email ama Username</label>
+      <input id="loginUser" autocomplete="username" required placeholder="you@example.com">
+      <label>Password</label>
+      <div class="passWrap"><input id="loginPass" type="password" autocomplete="current-password" required placeholder="••••••••"><button type="button" onclick="togglePassword()">👁</button></div>
+      <div class="loginRow"><label class="check"><input id="remember" type="checkbox"> I xasuuso</label><button type="button" class="linkBtn" onclick="forgotPassword()">Forgot password?</button></div>
+      <button class="primary loginBtn" type="submit">Login</button>
+      <div id="loginError" class="loginError"></div>
+    </form>
+    <div class="divider"><span>AMA</span></div>
+    <button class="ghost loginBtn" onclick="demoLogin()">Demo Login</button>
+    <p class="loginNote">Demo account: <b>admin@fluxio.com</b> / <b>Fluxio123!</b></p>
+  </div>
+</div>
+<div id="mainApp" class="app hiddenApp">
+<aside class="side">
+<div class="brand">⚡ Fluxio</div>
+<div class="nav" id="nav">
+<button data-v="home">🏠 Home</button><button data-v="explore">🔎 Explore</button><button data-v="reels">🎬 Reels</button><button data-v="notifications">🔔 Notifications</button><button data-v="messages">💬 Messages</button><button data-v="profile">👤 Profile</button><button data-v="settings">⚙️ Settings</button>
+<div class="admin"><small class="muted">ADMIN</small><button data-v="admin">📊 Admin Center</button></div>
+</div>
+<button class="primary" style="width:100%;margin-top:12px" onclick="openModal('postModal')">＋ Create Post</button><button class="ghost" style="width:100%;margin-top:8px" onclick="logout()">🚪 Logout</button>
+</aside>
+<main class="main">
+<header class="top"><input class="search" id="globalSearch" placeholder="Search Fluxio..." oninput="searchAll(this.value)"><button class="ghost" onclick="toggleTheme()">🌙</button><button class="ghost" onclick="go('notifications')">♥</button><div class="avatar">A</div></header>
+<div class="wrap">
+<section id="home" class="view">
+<div class="hero"><span class="pill">ALL-IN-ONE</span><h1>Everything social, in one flow.</h1><p class="muted">Fluxio V10 wuxuu isku keenayaa social app + creator tools + admin management.</p><div class="actions"><button class="primary" onclick="openModal('postModal')">Create Post</button><button class="ghost" onclick="go('explore')">Explore</button></div></div>
+<div class="grid"><div class="card"><span class="muted">Users</span><div class="stat" id="sUsers">12,480</div></div><div class="card"><span class="muted">Posts</span><div class="stat" id="sPosts">48,921</div></div><div class="card"><span class="muted">Active</span><div class="stat">3,842</div></div><div class="card"><span class="muted">Reports</span><div class="stat" id="sReports">27</div></div></div>
+<div class="stories"><div class="story"><div class="ring"><div>＋</div></div><small>Create</small></div><div class="story"><div class="ring"><div>MO</div></div><small>Mohamed</small></div><div class="story"><div class="ring"><div>SA</div></div><small>Sahra</small></div><div class="story"><div class="ring"><div>HA</div></div><small>Hani</small></div><div class="story"><div class="ring"><div>AB</div></div><small>Abdi</small></div></div>
+<div class="composer"><div class="avatar">A</div><input placeholder="What's happening?" onclick="openModal('postModal')"><button class="primary" onclick="openModal('postModal')">Post</button></div>
+<div id="feed"></div>
+</section>
+
+<section id="explore" class="view"><div class="hero"><h1>Explore</h1><p class="muted">Trending creators, topics and posts.</p></div><div class="grid"><div class="card">🔥 Trending<br><b>#SomaliaTech</b></div><div class="card">🎵 Music<br><b>New Releases</b></div><div class="card">⚽ Sports<br><b>Tonight Live</b></div><div class="card">💻 Technology<br><b>AI & Apps</b></div></div><div id="exploreList"></div></section>
+<section id="reels" class="view"><div class="hero"><h1>🎬 Reels</h1><p class="muted">Short videos feed prototype.</p></div><div id="reelsList"></div></section>
+<section id="notifications" class="view"><div class="hero"><h1>🔔 Notifications</h1><p class="muted">Updates from your Fluxio account.</p></div><div class="card">❤️ Sahra liked your post · 2m ago</div><div class="card">👤 Mohamed started following you · 8m ago</div><div class="card">💬 Abdi commented on your post · 14m ago</div></section>
+<section id="messages" class="view"><div class="hero"><h1>💬 Messages</h1><p class="muted">Chat center.</p></div><div class="card chat"><div class="messages" id="msgs"><div class="bubble">Salaan! Ku soo dhawoow Fluxio.</div><div class="bubble me">Mahadsanid! 👋</div></div><div class="chatinput"><input id="msgInput" placeholder="Write a message..." onkeydown="if(event.key==='Enter')sendMsg()"><button class="primary" onclick="sendMsg()">Send</button></div></div></section>
+<section id="profile" class="view"><div class="hero"><div class="avatar" style="width:70px;height:70px;font-size:25px">A</div><h1>Adan Omer</h1><p class="muted">@adan · Creator</p><div class="actions"><button class="primary" onclick="toast('Profile editing opened')">Edit Profile</button><button class="ghost" onclick="toast('Share link copied')">Share</button></div></div><div class="grid"><div class="card"><span class="muted">Followers</span><div class="stat">2.4K</div></div><div class="card"><span class="muted">Following</span><div class="stat">318</div></div><div class="card"><span class="muted">Posts</span><div class="stat">146</div></div><div class="card"><span class="muted">Likes</span><div class="stat">19.8K</div></div></div></section>
+<section id="settings" class="view"><div class="hero"><h1>⚙️ Settings</h1><p class="muted">Manage your Fluxio experience.</p></div><div class="card"><p>Push notifications <button class="toggle on" onclick="toggle(this)"><i></i></button></p><p>Private account <button class="toggle" onclick="toggle(this)"><i></i></button></p><p>Auto-play reels <button class="toggle on" onclick="toggle(this)"><i></i></button></p><button class="primary" onclick="toast('Settings saved')">Save Settings</button></div></section>
+
+<section id="admin" class="view"><div class="hero"><span class="pill">ADMIN CENTER</span><h1>Fluxio Management</h1><p class="muted">Maamul users, posts, messages, reports, analytics iyo settings hal meel.</p><div class="actions"><button class="primary" onclick="openModal('userModal')">＋ Add User</button><button class="ghost" onclick="openModal('announcementModal')">＋ Announcement</button></div></div>
+<div class="grid"><div class="card"><span class="muted">Total Users</span><div class="stat" id="aUsers">12,480</div></div><div class="card"><span class="muted">Posts</span><div class="stat" id="aPosts">48,921</div></div><div class="card"><span class="muted">Reports</span><div class="stat" id="aReports">27</div></div><div class="card"><span class="muted">Revenue</span><div class="stat">$8.4K</div></div></div>
+<div class="cols"><div class="card"><h2>👥 Users</h2><input class="search" style="width:100%;max-width:none" placeholder="Search users..." oninput="filterUsers(this.value)"><table class="table"><thead><tr><th>User</th><th>Status</th><th>Action</th></tr></thead><tbody id="users"></tbody></table></div>
+<div><div class="card"><h2>🚩 Reports</h2><div id="reports"></div></div><div class="card"><h2>📈 Analytics</h2><p class="muted">Weekly growth</p><div style="font-size:35px;font-weight:900">+18.7%</div><p>Engagement <b>74%</b></p><p>Retention <b>68%</b></p></div></div></div>
+<div class="card" style="margin-top:18px"><h2>📝 Posts Management</h2><div id="adminPosts"></div></div>
+</section>
+</div></main></div>
+<nav class="bottom" id="bottom"><button data-v="home">⌂</button><button data-v="explore">⌕</button><button data-v="reels">▶</button><button data-v="messages">✉</button><button data-v="profile">●</button><button data-v="admin">⚙</button></nav>
+
+<div class="modal" id="postModal"><div class="modalbox"><h2>Create Post</h2><textarea id="postText" rows="5" placeholder="Write something..."></textarea><input id="postImg" placeholder="Optional image URL"><div class="actions"><button class="ghost" onclick="closeModal('postModal')">Cancel</button><button class="primary" onclick="createPost()">Publish</button></div></div></div>
+<div class="modal" id="userModal"><div class="modalbox"><h2>Add User</h2><input id="uName" placeholder="Full name"><input id="uHandle" placeholder="@username"><div class="actions"><button class="ghost" onclick="closeModal('userModal')">Cancel</button><button class="primary" onclick="addUser()">Add User</button></div></div></div>
+<div class="modal" id="announcementModal"><div class="modalbox"><h2>New Announcement</h2><textarea id="annText" rows="4" placeholder="Announcement..."></textarea><div class="actions"><button class="ghost" onclick="closeModal('announcementModal')">Cancel</button><button class="primary" onclick="addAnnouncement()">Publish</button></div></div></div>
+<div class="toast" id="toast"></div>
+<script>
+let posts=[
+{id:1,user:"Mohamed Ali",handle:"@mali",text:"Welcome to Fluxio! 🚀 Hal meel oo social ah.",likes:128,comments:12,img:""},
+{id:2,user:"Sahra",handle:"@sahra",text:"Building something beautiful today. ✨",likes:84,comments:7,img:""}
+];
+let users=[["Mohamed Ali","@mali","Active"],["Sahra","@sahra","Active"],["Abdi Noor","@abdi","Active"],["Hani","@hani","Suspended"]];
+let reports=[["Spam post","@mali"],["Harassment","@user22"],["Fake account","@newuser"]];
+function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('show'));document.getElementById(v).classList.add('show');document.querySelectorAll('[data-v]').forEach(b=>b.classList.toggle('active',b.dataset.v===v));if(v==='admin')renderAdmin();}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>go(b.dataset.v));
+function toast(t){let x=document.getElementById('toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),1800)}
+function openModal(id){document.getElementById(id).classList.add('show')}function closeModal(id){document.getElementById(id).classList.remove('show')}
+function renderFeed(list=posts){document.getElementById('feed').innerHTML=list.map(p=>`<article class="post" data-id="${p.id}"><div class="posthead"><div class="avatar">${p.user[0]}</div><div><b>${p.user}</b><div class="muted">${p.handle} · now</div></div></div><p>${p.text}</p>${p.img?`<img src="${p.img}" alt="post image">`:''}<div class="postbar"><button onclick="like(${p.id},this)">❤️ ${p.likes}</button><button onclick="comment(${p.id})">💬 ${p.comments}</button><button onclick="share()">↗ Share</button><button onclick="follow(this)">＋ Follow</button></div></article>`).join('')}
+function like(id,b){let p=posts.find(x=>x.id===id);p.likes++;b.textContent='❤️ '+p.likes;toast('Liked')}
+function comment(id){let t=prompt('Comment:');if(t){posts.find(x=>x.id===id).comments++;renderFeed();toast('Comment added')}}
+function share(){toast('Share link copied')}
+function follow(b){b.textContent=b.textContent.includes('Follow')?'✓ Following':'＋ Follow';toast('Updated')}
+function createPost(){let text=document.getElementById('postText').value.trim();if(!text)return toast('Write something first');posts.unshift({id:Date.now(),user:"Adan Omer",handle:"@adan",text,likes:0,comments:0,img:document.getElementById('postImg').value.trim()});document.getElementById('postText').value='';document.getElementById('postImg').value='';closeModal('postModal');renderFeed();go('home');toast('Post published')}
+function renderAdmin(){document.getElementById('users').innerHTML=users.map((u,i)=>`<tr><td><b>${u[0]}</b><br><span class="muted">${u[1]}</span></td><td><span class="pill">${u[2]}</span></td><td><button class="ghost" onclick="suspend(${i})">${u[2]==='Suspended'?'Activate':'Suspend'}</button></td></tr>`).join('');document.getElementById('reports').innerHTML=reports.map((r,i)=>`<div style="padding:10px 0;border-bottom:1px solid var(--line)"><b>${r[0]}</b><br><span class="muted">${r[1]}</span><button class="danger" style="float:right" onclick="resolveReport(${i})">Resolve</button></div>`).join('');document.getElementById('adminPosts').innerHTML=posts.map(p=>`<div style="padding:12px 0;border-bottom:1px solid var(--line)"><b>${p.user}</b> — ${p.text}<button class="danger" style="float:right" onclick="deletePost(${p.id})">Delete</button></div>`).join('');document.getElementById('aUsers').textContent=(12480+users.length-4).toLocaleString();document.getElementById('aPosts').textContent=(48921+posts.length-2).toLocaleString();document.getElementById('aReports').textContent=reports.length}
+function addUser(){let n=document.getElementById('uName').value.trim(),h=document.getElementById('uHandle').value.trim()||'@newuser';if(!n)return toast('Name required');users.push([n,h,'Active']);closeModal('userModal');renderAdmin();toast('User added')}
+function suspend(i){users[i][2]=users[i][2]==='Suspended'?'Active':'Suspended';renderAdmin();toast('User status updated')}
+function filterUsers(q){document.querySelectorAll('#users tr').forEach(r=>r.style.display=r.textContent.toLowerCase().includes(q.toLowerCase())?'':'none')}
+function deletePost(id){posts=posts.filter(p=>p.id!==id);renderFeed();renderAdmin();toast('Post deleted')}
+function resolveReport(i){reports.splice(i,1);renderAdmin();toast('Report resolved')}
+function addAnnouncement(){let t=document.getElementById('annText').value.trim();if(!t)return toast('Write announcement');posts.unshift({id:Date.now(),user:"Fluxio Admin",handle:"@admin",text:"📢 "+t,likes:0,comments:0,img:""});document.getElementById('annText').value='';closeModal('announcementModal');renderFeed();renderAdmin();toast('Announcement published')}
+function sendMsg(){let i=document.getElementById('msgInput'),t=i.value.trim();if(!t)return;document.getElementById('msgs').insertAdjacentHTML('beforeend',`<div class="bubble me">${t}</div>`);i.value='';setTimeout(()=>document.getElementById('msgs').insertAdjacentHTML('beforeend',`<div class="bubble">Thanks for your message! 👋</div>`),500)}
+function toggle(x){x.classList.toggle('on')}
+function toggleTheme(){document.body.classList.toggle('light');toast('Theme toggled')}
+function searchAll(q){if(!q)return renderFeed();let s=q.toLowerCase();renderFeed(posts.filter(p=>(p.text+p.user+p.handle).toLowerCase().includes(s)));go('home')}
+function loadExtras(){document.getElementById('exploreList').innerHTML=posts.map(p=>`<article class="post"><b>${p.user}</b><p>${p.text}</p><button class="ghost" onclick="go('home')">Open post</button></article>`).join('');document.getElementById('reelsList').innerHTML=['🎬 Creator tips','🎬 Somali culture','🎬 Tech news'].map(x=>`<div class="card" style="margin:12px 0;font-size:22px">${x}<button class="primary" style="float:right" onclick="toast('Playing reel')">▶ Play</button></div>`).join('')}
+renderFeed();loadExtras();go('home');
+
+// Fluxio V11 authentication prototype
+const DEMO_EMAIL = "admin@fluxio.com";
+const DEMO_PASS = "Fluxio123!";
+function showApp(){document.getElementById("loginScreen").classList.add("hiddenApp");document.getElementById("mainApp").classList.remove("hiddenApp");}
+function showLogin(){document.getElementById("loginScreen").classList.remove("hiddenApp");document.getElementById("mainApp").classList.add("hiddenApp");}
+function setSession(user,remember){const data={user,loggedIn:true};(remember?localStorage:sessionStorage).setItem("fluxioSession",JSON.stringify(data));}
+function getSession(){try{return JSON.parse(localStorage.getItem("fluxioSession")||sessionStorage.getItem("fluxioSession")||"null")}catch(e){return null}}
+function logout(){localStorage.removeItem("fluxioSession");sessionStorage.removeItem("fluxioSession");showLogin();document.getElementById("loginPass").value="";toast("Logged out");}
+function togglePassword(){const x=document.getElementById("loginPass");x.type=x.type==="password"?"text":"password"}
+function forgotPassword(){document.getElementById("loginError").textContent="Password reset: backend/email service ayaa loo baahan yahay."}
+function demoLogin(){document.getElementById("loginUser").value=DEMO_EMAIL;document.getElementById("loginPass").value=DEMO_PASS;document.getElementById("remember").checked=true;document.getElementById("loginForm").requestSubmit()}
+document.getElementById("loginForm").addEventListener("submit",function(e){e.preventDefault();let u=document.getElementById("loginUser").value.trim(),p=document.getElementById("loginPass").value,err=document.getElementById("loginError");if(u.toLowerCase()===DEMO_EMAIL&&p===DEMO_PASS){setSession(u,document.getElementById("remember").checked);err.textContent="";showApp();toast("Login successful 👋")}else{err.textContent="Email/username ama password waa khalad.";}})
+const session=getSession(); if(session?.loggedIn) showApp(); else showLogin();
+</script></body></html>
